@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Style the checkbox */
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: blue;
+    /* Changes the checkbox color */
+}
+
+
+/* Style the label */
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+
+/* Buttons */
+
+header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sec{
+    background:linear-gradient(45deg, #0000ff, #ff0000);
+    width: 100%;
+}
+
+header button {
+    padding: 5px 10px;
+    margin-left: 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    color: rgb(251, 250, 252);
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #0000ff, #ff0000, #0000ff, #020c6b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* History */
+
+.history {
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Mobile-friendly Layout */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(-45deg, #0000ff, #ff0000, #fff, #000428);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+
+/* Animated Background */
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0000ff, #ff0000, #03b1fc, #020c6b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Header (Fixed) */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Header Buttons */
+
+header button {
+    background: linear-gradient(45deg, #0000ff, #ff0000);
+    color: rgb(8, 0, 0);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Gradient Animated Heading */
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff00ff, #ffcc00, #00ffff);
+    background-size: 300% 300%;
+    animation: textGradient 5s ease infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+
+/* Text Gradient Animation */
+
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* Input Fields */
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #090909;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input-group input:focus+label,
+.input-group input:valid+label {
+    top: 5px;
+    font-size: 12px;
+    color: #00ffcc;
+}
+
+
+/* Submit Button */
+
+button.glow-button {
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+    transition: transform 0.2s ease;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0000ff, #ff0000, #03b1fc, #020c6b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+button.glow-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* History Section */
+
+.history {
+    background:linear-gradient(to top,45deg, #0000ff,#ff0000);
+    width: 90vw;
+    max-width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    button.glow-button,
+    .input-group input,
+    .input-group select {
+        font-size: 14px;
+    }
+}

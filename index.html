@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Church Member Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <!-- Animated Background -->
+    <header class="sec">
+        <img src="logo.jpg" alt="Church Logo" class="logo">
+        <!-- Custom Logo -->
+        <button id="aboutBtn">ℹ️ ME.</button>
+        <!-- Dark/Light Mode -->
+    </header>
+
+    <div class="container">
+        <h1>✨Bungoma township Altar✨</h1>
+        <form id="registrationForm">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label>Name</label>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" required>
+                <label>Phone Number</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="occupation" required>
+                <label>Occupation</label>
+            </div>
+            <div class="input-group">
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male🧑🏽">Male🧑🏽</option>
+                    <option value="Female👩🏽‍🦰">Female👩🏽‍🦰</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <select id="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Worshiper">Worshiper</option>
+                    <option value="Usher">Usher</option>
+                    <option value="Security">Security</option>
+                    <option value="Sunday school">Sunday school</option>
+                    <option value="Youth">Youth</option>
+                    <option value="Protocol">Protocol</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Priesthood">Priesthood</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Intersensory">Intersensory</option>
+                    <option value="Technician">Technician</option>
+                    <option value="Guest">Guest</option>
+                </select>
+            </div>
+            <label>Leader:</label>
+            <input type="checkbox" id="leader"><br><br>
+
+            <button type="submit" class="glow-button">🚀 Register Now</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+
+    <!-- History Section -->
+    <div class="history">
+        <h2>📜 Recent Registrations</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About Me</h2>
+            <p>Created and maintan by Johnmark.</p>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" src="church-music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
